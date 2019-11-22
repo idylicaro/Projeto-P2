@@ -12,7 +12,7 @@ int main(){
     setlocale(LC_ALL,"portuguese");
     int verifica=0,existe=0,opcao=1;
     char login[15], senha[15];
-    char professor='p';
+    
 
     User usuario;
     ifstream leitura;
@@ -95,7 +95,7 @@ int main(){
 
 void cadastro_para_aluno(){
     struct User newUser;
-    int QuantTotal=0,quantIn=0;
+    int quantIn=0;
     verificaCadastrados(quantIn);
     fstream archive;
     archive.open(nameArchive,ios::out|ios::in|ios::ate);
